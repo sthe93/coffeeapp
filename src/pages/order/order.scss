@@ -1,0 +1,24 @@
+page-order {
+    .content{
+        background-image:url("../assets/imgs/mes.jpg");
+        background-repeat: no-repeat;
+        display: fixed;
+    }
+    .lab{
+        color: white;
+        font-family: arial;
+        font-size:x-large;
+    }
+    .order{
+        font-family: arial;
+        font-size:x-large;
+        color:white;
+    }
+    .cups{
+        color: black;
+    }
+    .ptag{
+        background-color: rgba(0.0,0.0,0.0,0.5);
+        font-size: large;
+    }
+}

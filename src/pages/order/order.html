@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Next customer place!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="content" padding>  
+    <ion-label class="lab" align="center">Hi {{uname}} please place your order</ion-label>
+    <ion-list class="list">
+      <ion-item>
+        <ion-label>Buy a cup of coffee for only R9.99</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Add Toppings</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Chocolate</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="chocolate"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Wipped Cream</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="cardamon"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Mint</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="nutmeg"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-col col-2><p>Quantity<p></ion-col>
+        <button ion-button color="secondary" (click)="cups(+1)" outline>+</button>
+        <button ion-button color="danger" (click)="cups(-1)" outline >-</button>
+      </ion-item>
+      <ion-item>
+        <ion-col col-2><p>purchase details<p></ion-col>
+        <ion-col col-2><p>customer:{{uname}}<p></ion-col> 
+        <ion-col col-2><p>Coffee cup(s):{{counter}}<p></ion-col>
+        <ion-col col-2><p>Net price:R{{netPrice}}</p></ion-col>
+        <button ion-button color="blue" (click)="purchase()" outline>Place order</button>
+      </ion-item>
+      <ion-item>
+          <button ion-button color="primary" (click)="showAlert()" round>buy</button>
+      </ion-item>
+    </ion-list>
+   
+</ion-content>
